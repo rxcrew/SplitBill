@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -17,6 +18,33 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return view
     }()
     
+    let emailTextField: UITextField = {
+        
+        let tf = UITextField()
+        tf.placeholder = "Email"
+        tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
+        tf.borderStyle = .roundedRect
+        tf.font = UIFont.systemFont(ofSize: 14)
+        
+        tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
+        
+        return tf
+    }()
+    
+    @objc func handleTextInputChange() {
+        
+        let emailIsValid = emailTextField.text?.count ?? 0 > 0 && emailTextField.text?.contains("@") ?? false == true && passwordTextField.text?.count ?? 0 > 6 && phoneTextField.text?.count ?? 0 > 0
+        
+        if emailIsValid {
+            signupButton.isEnabled = true
+            signupButton.backgroundColor = UIColor.rgb(red: 17, green: 154, blue: 237)
+        } else {
+            signupButton.isEnabled = false
+            signupButton.backgroundColor = UIColor.rgb(red: 149, green: 204, blue: 244)
+        }
+    }
+    
+    
     let phoneTextField: UITextField = {
         
         let tf = UITextField()
@@ -24,6 +52,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
         tf.borderStyle = .roundedRect
         tf.font = UIFont.systemFont(ofSize: 14)
+        
+        tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
+        
         return tf
     }()
         
@@ -34,6 +65,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
         tf.borderStyle = .roundedRect
         tf.font = UIFont.systemFont(ofSize: 14)
+        
+        tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
+        
         return tf
     }()
     
@@ -45,6 +79,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
         tf.borderStyle = .roundedRect
         tf.font = UIFont.systemFont(ofSize: 14)
+        
+        tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
+        
         return tf
     }()
     
@@ -56,9 +93,42 @@ class ViewController: UIViewController, UITextFieldDelegate {
         button.layer.cornerRadius = 5
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(.white, for: .normal)
+        
+        button.addTarget(self, action: #selector(handleSignup), for: .touchUpInside)
+        button.isEnabled = false
+        
         return button
     }()
     
+    @objc func handleSignup() {
+        guard let email = emailTextField.text, email.count > 0, email.contains("@") else {return}
+        guard let password = passwordTextField.text, password.count > 0 else {return}
+        guard let wallet = walletTextField.text, wallet.count > 0 else {return}
+        guard let phone = phoneTextField.text, phone.count > 0 else {return}
+        
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            print("Succses: with", result?.user.uid ?? "")
+            
+            // saving data to database
+            let meta = [["email":email], ["phone":phone], ["wallet":wallet]]
+            guard let uid = result?.user.uid else { return }
+            let values = [uid:meta]
+            Database.database().reference().child("users").updateChildValues(values, withCompletionBlock: { (err, ref) in
+                if let error = err {
+                    print("Failed to save user info into DB", error)
+                    return
+                } else {
+                    print("Successfully saved user info into DB")
+                }
+            })
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,17 +136,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         phoneTextField.delegate = self
 
         view.addSubview(logoImage)
-//        logoImage.heightAnchor.constraint(equalToConstant: 140).isActive = true
-//        logoImage.widthAnchor.constraint(equalToConstant: 140).isActive = true
         logoImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        logoImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
+        
         logoImage.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 40, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 140, height: 140)
         
         setupFields()
     }
     
     fileprivate func setupFields() {
-        let stackView = UIStackView(arrangedSubviews: [phoneTextField, walletTextField, passwordTextField, signupButton])
+        let stackView = UIStackView(arrangedSubviews: [emailTextField, phoneTextField, walletTextField, passwordTextField, signupButton])
         
         stackView.distribution = .fillEqually
         stackView.axis = .vertical
