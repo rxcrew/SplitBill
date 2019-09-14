@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     
     let logoImage: UIImageView = {
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         tf.font = UIFont.systemFont(ofSize: 14)
         return tf
     }()
-    
+        
     let walletTextField: UITextField = {
         
         let tf = UITextField()
@@ -62,8 +62,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        phoneTextField.delegate = self
+
         view.addSubview(logoImage)
 //        logoImage.heightAnchor.constraint(equalToConstant: 140).isActive = true
 //        logoImage.widthAnchor.constraint(equalToConstant: 140).isActive = true
@@ -86,36 +87,18 @@ class ViewController: UIViewController {
         
         stackView.anchor(top: logoImage.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 20, paddingLeft: 40, paddingBottom: 0, paddingRight: 40, width: 0, height: 200)
     }
-
-}
-
-extension UIView {
-    func anchor(top: NSLayoutYAxisAnchor?, left: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, right: NSLayoutXAxisAnchor?, paddingTop: CGFloat, paddingLeft: CGFloat, paddingBottom: CGFloat, paddingRight: CGFloat, width: CGFloat, height: CGFloat) {
-        
-        self.translatesAutoresizingMaskIntoConstraints = false
-        
-        if let top = top {
-             self.topAnchor.constraint(equalTo: top, constant: paddingTop).isActive = true
+    
+    //MARK - UITextField Delegates
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        //For mobile numer validation
+        if textField == phoneTextField {
+            let allowedCharacters = CharacterSet(charactersIn:"+0123456789 ")//Here change this characters based on your requirement
+            let characterSet = CharacterSet(charactersIn: string)
+            return allowedCharacters.isSuperset(of: characterSet)
         }
-        
-        if let left = left {
-             self.leftAnchor.constraint(equalTo: left, constant: paddingLeft).isActive = true
-        }
-        
-        if let bottom = bottom {
-             self.bottomAnchor.constraint(equalTo: bottom, constant: paddingBottom).isActive = true
-        }
-        
-        if let right = right {
-             self.rightAnchor.constraint(equalTo: right, constant: -paddingRight).isActive = true
-        }
-        
-        if width != 0 {
-            self.widthAnchor.constraint(equalToConstant: width).isActive = true
-        }
-        
-        if height != 0 {
-            self.heightAnchor.constraint(equalToConstant: height).isActive = true
-        }
+        return true
     }
+
 }
+
+
