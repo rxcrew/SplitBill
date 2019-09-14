@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  BillSplit
+//  billo
 //
 //  Created by Denis Nefedov on 14.09.2019.
 //  Copyright © 2019 X. All rights reserved.

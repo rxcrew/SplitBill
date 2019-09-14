@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14D4D34D232D1D6100241207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4D34C232D1D6100241207 /* AppDelegate.swift */; };
-		14D4D34F232D1D6100241207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4D34E232D1D6100241207 /* SceneDelegate.swift */; };
-		14D4D351232D1D6100241207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4D350232D1D6100241207 /* ViewController.swift */; };
-		14D4D354232D1D6100241207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D4D352232D1D6100241207 /* Main.storyboard */; };
-		14D4D357232D1D6100241207 /* BillSplit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14D4D355232D1D6100241207 /* BillSplit.xcdatamodeld */; };
-		14D4D359232D1D6600241207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D4D358232D1D6600241207 /* Assets.xcassets */; };
-		14D4D35C232D1D6600241207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D4D35A232D1D6600241207 /* LaunchScreen.storyboard */; };
+		1469BCCD232D229D00A30251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469BCCC232D229D00A30251 /* AppDelegate.swift */; };
+		1469BCCF232D229D00A30251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469BCCE232D229D00A30251 /* SceneDelegate.swift */; };
+		1469BCD1232D229D00A30251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469BCD0232D229D00A30251 /* ViewController.swift */; };
+		1469BCD4232D229D00A30251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1469BCD2232D229D00A30251 /* Main.storyboard */; };
+		1469BCD7232D229D00A30251 /* billo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1469BCD5232D229D00A30251 /* billo.xcdatamodeld */; };
+		1469BCD9232D229F00A30251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1469BCD8232D229F00A30251 /* Assets.xcassets */; };
+		1469BCDC232D229F00A30251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1469BCDA232D229F00A30251 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14D4D349232D1D6100241207 /* BillSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		14D4D34C232D1D6100241207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14D4D34E232D1D6100241207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14D4D350232D1D6100241207 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		14D4D353232D1D6100241207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		14D4D356232D1D6100241207 /* BillSplit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BillSplit.xcdatamodel; sourceTree = "<group>"; };
-		14D4D358232D1D6600241207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		14D4D35B232D1D6600241207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		14D4D35D232D1D6600241207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1469BCC9232D229D00A30251 /* billo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = billo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1469BCCC232D229D00A30251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1469BCCE232D229D00A30251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1469BCD0232D229D00A30251 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1469BCD3232D229D00A30251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1469BCD6232D229D00A30251 /* billo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = billo.xcdatamodel; sourceTree = "<group>"; };
+		1469BCD8232D229F00A30251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1469BCDB232D229F00A30251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1469BCDD232D229F00A30251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14D4D346232D1D6100241207 /* Frameworks */ = {
+		1469BCC6232D229D00A30251 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14D4D340232D1D6100241207 = {
+		1469BCC0232D229D00A30251 = {
 			isa = PBXGroup;
 			children = (
-				14D4D34B232D1D6100241207 /* BillSplit */,
-				14D4D34A232D1D6100241207 /* Products */,
+				1469BCCB232D229D00A30251 /* billo */,
+				1469BCCA232D229D00A30251 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		14D4D34A232D1D6100241207 /* Products */ = {
+		1469BCCA232D229D00A30251 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14D4D349232D1D6100241207 /* BillSplit.app */,
+				1469BCC9232D229D00A30251 /* billo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14D4D34B232D1D6100241207 /* BillSplit */ = {
+		1469BCCB232D229D00A30251 /* billo */ = {
 			isa = PBXGroup;
 			children = (
-				14D4D34C232D1D6100241207 /* AppDelegate.swift */,
-				14D4D34E232D1D6100241207 /* SceneDelegate.swift */,
-				14D4D350232D1D6100241207 /* ViewController.swift */,
-				14D4D352232D1D6100241207 /* Main.storyboard */,
-				14D4D358232D1D6600241207 /* Assets.xcassets */,
-				14D4D35A232D1D6600241207 /* LaunchScreen.storyboard */,
-				14D4D35D232D1D6600241207 /* Info.plist */,
-				14D4D355232D1D6100241207 /* BillSplit.xcdatamodeld */,
+				1469BCCC232D229D00A30251 /* AppDelegate.swift */,
+				1469BCCE232D229D00A30251 /* SceneDelegate.swift */,
+				1469BCD0232D229D00A30251 /* ViewController.swift */,
+				1469BCD2232D229D00A30251 /* Main.storyboard */,
+				1469BCD8232D229F00A30251 /* Assets.xcassets */,
+				1469BCDA232D229F00A30251 /* LaunchScreen.storyboard */,
+				1469BCDD232D229F00A30251 /* Info.plist */,
+				1469BCD5232D229D00A30251 /* billo.xcdatamodeld */,
 			);
-			path = BillSplit;
+			path = billo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14D4D348232D1D6100241207 /* BillSplit */ = {
+		1469BCC8232D229D00A30251 /* billo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14D4D360232D1D6600241207 /* Build configuration list for PBXNativeTarget "BillSplit" */;
+			buildConfigurationList = 1469BCE0232D229F00A30251 /* Build configuration list for PBXNativeTarget "billo" */;
 			buildPhases = (
-				14D4D345232D1D6100241207 /* Sources */,
-				14D4D346232D1D6100241207 /* Frameworks */,
-				14D4D347232D1D6100241207 /* Resources */,
+				1469BCC5232D229D00A30251 /* Sources */,
+				1469BCC6232D229D00A30251 /* Frameworks */,
+				1469BCC7232D229D00A30251 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BillSplit;
-			productName = BillSplit;
-			productReference = 14D4D349232D1D6100241207 /* BillSplit.app */;
+			name = billo;
+			productName = billo;
+			productReference = 1469BCC9232D229D00A30251 /* billo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		14D4D341232D1D6100241207 /* Project object */ = {
+		1469BCC1232D229D00A30251 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = X;
 				TargetAttributes = {
-					14D4D348232D1D6100241207 = {
+					1469BCC8232D229D00A30251 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = 14D4D344232D1D6100241207 /* Build configuration list for PBXProject "BillSplit" */;
+			buildConfigurationList = 1469BCC4232D229D00A30251 /* Build configuration list for PBXProject "billo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 14D4D340232D1D6100241207;
-			productRefGroup = 14D4D34A232D1D6100241207 /* Products */;
+			mainGroup = 1469BCC0232D229D00A30251;
+			productRefGroup = 1469BCCA232D229D00A30251 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14D4D348232D1D6100241207 /* BillSplit */,
+				1469BCC8232D229D00A30251 /* billo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		14D4D347232D1D6100241207 /* Resources */ = {
+		1469BCC7232D229D00A30251 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14D4D35C232D1D6600241207 /* LaunchScreen.storyboard in Resources */,
-				14D4D359232D1D6600241207 /* Assets.xcassets in Resources */,
-				14D4D354232D1D6100241207 /* Main.storyboard in Resources */,
+				1469BCDC232D229F00A30251 /* LaunchScreen.storyboard in Resources */,
+				1469BCD9232D229F00A30251 /* Assets.xcassets in Resources */,
+				1469BCD4232D229D00A30251 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		14D4D345232D1D6100241207 /* Sources */ = {
+		1469BCC5232D229D00A30251 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14D4D351232D1D6100241207 /* ViewController.swift in Sources */,
-				14D4D357232D1D6100241207 /* BillSplit.xcdatamodeld in Sources */,
-				14D4D34D232D1D6100241207 /* AppDelegate.swift in Sources */,
-				14D4D34F232D1D6100241207 /* SceneDelegate.swift in Sources */,
+				1469BCD7232D229D00A30251 /* billo.xcdatamodeld in Sources */,
+				1469BCD1232D229D00A30251 /* ViewController.swift in Sources */,
+				1469BCCD232D229D00A30251 /* AppDelegate.swift in Sources */,
+				1469BCCF232D229D00A30251 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		14D4D352232D1D6100241207 /* Main.storyboard */ = {
+		1469BCD2232D229D00A30251 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14D4D353232D1D6100241207 /* Base */,
+				1469BCD3232D229D00A30251 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		14D4D35A232D1D6600241207 /* LaunchScreen.storyboard */ = {
+		1469BCDA232D229F00A30251 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14D4D35B232D1D6600241207 /* Base */,
+				1469BCDB232D229F00A30251 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		14D4D35E232D1D6600241207 /* Debug */ = {
+		1469BCDE232D229F00A30251 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		14D4D35F232D1D6600241207 /* Release */ = {
+		1469BCDF232D229F00A30251 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,36 +284,36 @@
 			};
 			name = Release;
 		};
-		14D4D361232D1D6600241207 /* Debug */ = {
+		1469BCE1232D229F00A30251 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28XXG6S5AU;
-				INFOPLIST_FILE = BillSplit/Info.plist;
+				INFOPLIST_FILE = billo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.xrobotics.BillSplit;
+				PRODUCT_BUNDLE_IDENTIFIER = org.xrobotics.billo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		14D4D362232D1D6600241207 /* Release */ = {
+		1469BCE2232D229F00A30251 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28XXG6S5AU;
-				INFOPLIST_FILE = BillSplit/Info.plist;
+				INFOPLIST_FILE = billo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.xrobotics.BillSplit;
+				PRODUCT_BUNDLE_IDENTIFIER = org.xrobotics.billo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,20 +323,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14D4D344232D1D6100241207 /* Build configuration list for PBXProject "BillSplit" */ = {
+		1469BCC4232D229D00A30251 /* Build configuration list for PBXProject "billo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14D4D35E232D1D6600241207 /* Debug */,
-				14D4D35F232D1D6600241207 /* Release */,
+				1469BCDE232D229F00A30251 /* Debug */,
+				1469BCDF232D229F00A30251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14D4D360232D1D6600241207 /* Build configuration list for PBXNativeTarget "BillSplit" */ = {
+		1469BCE0232D229F00A30251 /* Build configuration list for PBXNativeTarget "billo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14D4D361232D1D6600241207 /* Debug */,
-				14D4D362232D1D6600241207 /* Release */,
+				1469BCE1232D229F00A30251 /* Debug */,
+				1469BCE2232D229F00A30251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -344,17 +344,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		14D4D355232D1D6100241207 /* BillSplit.xcdatamodeld */ = {
+		1469BCD5232D229D00A30251 /* billo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				14D4D356232D1D6100241207 /* BillSplit.xcdatamodel */,
+				1469BCD6232D229D00A30251 /* billo.xcdatamodel */,
 			);
-			currentVersion = 14D4D356232D1D6100241207 /* BillSplit.xcdatamodel */;
-			path = BillSplit.xcdatamodeld;
+			currentVersion = 1469BCD6232D229D00A30251 /* billo.xcdatamodel */;
+			path = billo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 14D4D341232D1D6100241207 /* Project object */;
+	rootObject = 1469BCC1232D229D00A30251 /* Project object */;
 }
